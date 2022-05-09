@@ -1,0 +1,121 @@
+/**
+*
+* Testing
+*
+**/
+* {
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+}
+
+.sections > * {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 450px) {
+  .sections > * {
+    height: 160vh;
+    position: relative;
+    z-index: 6;
+  }
+}
+
+@media (max-width: 1365px) {
+  z-index: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #283739;
+}
+
+@media (max-width: 1365px) {
+  ::-webkit-scrollbar {
+    width: 0%;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #283739;
+          box-shadow: inset 0 0 5px #283739;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #314345;
+  border-radius: 10px;
+}
+
+/**
+*
+* Testing
+*
+**/
+#centered_page {
+  position: relative;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+}
+
+#centered_page p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #f5f5f5b9;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  #centered_page p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+  #centered_page p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+#centered_page #name_hp {
+  color: #22BCD1;
+}
+
+#centered_page #subtext {
+  position: absolute;
+  width: 300px;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: large;
+  color: #f5f5f5b9;
+}
+
+@media (max-width: 450px) {
+  #centered_page #subtext {
+    left: 59%;
+    margin-top: 10px;
+  }
+}
+
+#centered_page #type_effect {
+  margin-left: 10px;
+  color: #22BCD1;
+}
+/*# sourceMappingURL=homepage.css.map */

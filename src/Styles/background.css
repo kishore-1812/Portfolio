@@ -1,0 +1,9 @@
+* {
+  margin: 0%;
+}
+
+#particle_bg {
+  position: absolute;
+  z-index: -2;
+}
+/*# sourceMappingURL=background.css.map */

@@ -1,0 +1,208 @@
+@import './App.scss';
+
+$mob_nav_bg : linear-gradient(to right,rgb(49, 67, 69),rgb(31,43,44));  //,rgb(42,57,59)
+.navbar{
+    position: fixed;
+    z-index: 5;
+    transition: .4s ease-in-out;
+    width: 100%;  
+    height: auto;
+    top: 0%;
+    padding: 20px 0px;
+    .nav_flex{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    li{
+        padding-right: 80px;
+        list-style: none;
+        color: $green_color;
+        font-size: 20px;
+        a{
+            text-decoration: none;
+            color: $green_color;
+            &:hover{
+                color: $blue_color;
+            }
+        }
+    }
+    #resumebtn{
+        background-color: $primary_color;
+        color: $white_color;
+        border-radius: 5px;
+        border: 3px solid $white_color; 
+        padding: 5px;
+        font-size: 20px;
+
+        &:hover{
+            cursor: pointer;
+            transition: 1s ease-in-out;
+            background-color: #fbffff;
+            color: black;
+        }
+    }
+}
+
+.navbar_scroll{
+    position: fixed;
+    z-index: 5;
+    transition: .4s ease-in-out;
+    width: 100%;  
+    height: auto;
+    top: 0%;
+    padding: 20px 0px;
+    background-color: $primary_color;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    .nav_flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .active{
+        a{
+            background-color: $dark_blue;
+            border-radius: 18%;
+            border-bottom-left-radius:30%;
+            border-bottom-right-radius:30%;
+            color: #ffffff;    
+        }
+        
+    }
+    li{
+        list-style: none;
+        color: $green_color;
+        font-size: 20px;    
+        padding: 5px;
+        overflow: hidden;
+
+        a{
+            margin: 10px;
+            text-decoration: none;
+            color: $green_color;
+            padding: 10px 10px 15px 10px;
+            box-sizing: border-box;
+            &:hover{
+                background-color: $dark_blue;
+                border-radius: 18%;
+                border-bottom-left-radius:30%;
+                border-bottom-right-radius:30%;
+                color: #ffffff;
+        }
+    }
+    #resumebtn{
+        background-color: $primary_color;
+        color: $white_color;
+        border-radius: 5px;
+        border: 3px solid $white_color; 
+        padding: 8px;
+        font-size: 20px;
+
+        &:hover{
+            cursor: pointer;
+            transition: 1s ease-in-out;
+            background-color: #fbffff;
+            color: black;
+        }
+    }
+    }
+}
+
+.mob_tab_nav{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: $mob_nav_bg;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    nav{
+        position: relative;
+        height: inherit;
+        overflow-y: hidden;
+    }
+    .nav-list{
+        height: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        position: absolute;
+        z-index: inherit;
+        background: $mob_nav_bg;
+        @include media("<=bigPhone"){
+            margin-top: 70%;
+        }
+        .nav_item{
+            padding-top: 30px;
+            @include media("<=bigPhone"){
+                margin-top: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: $green_color;
+                @include media("<=bigPhone"){
+                    font-size: 1.6em;
+                }
+                @include media(">=tablet"){
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
+
+}
+.mob_tab_nav.mob_tab_alt  {
+    height: 100vh;
+    width: 50%;
+    transition: 0.3s;
+    right: 0;
+    background: $mob_nav_bg;
+    #mb_resumebtn{
+        background-color: $primary_color;
+        color: $white_color;
+        border-radius: 5px;
+        border: 3px solid $white_color; 
+        padding: 5px;
+        font-size: 1.6em;
+    }
+}
+
+
+.hamburger{
+    margin-top: 5px;
+    width: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 2%;
+    margin-right: 15px;
+    z-index: 7;
+    >div{
+        width: inherit;
+        height: 3px;
+        background-color: $green_color;
+        margin:5px 4px 5px 0px;
+        transition: .35s ease-in-out;
+    }
+    @include media("<bigPhone"){
+        margin-right: 8px;
+    }
+}
+
+.hamburger.open{
+    #ham_top{
+        transform: rotate(45deg);
+        top: 6px;
+    }
+    #ham_mid{
+        width: 0%;
+        opacity: 0;
+    }
+    #ham_bot{
+        transform: rotate(-45deg);
+        top: -10px;
+    }
+    
+}
+
