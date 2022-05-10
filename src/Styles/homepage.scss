@@ -1,0 +1,45 @@
+@import '../Styles/App.scss';
+@import './breakpoints.scss';
+
+#centered_page{
+    position: relative;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding:20px;
+        color: $white_color;
+        font-weight: 500;
+        font-size:3rem;
+        @include media(">=tablet","<desktop"){
+            width: fit-content;
+        }
+        @include media(">bigPhone","<tablet"){
+            width: fit-content;
+        }
+    }
+    #name_hp{
+        color: #22BCD1;
+    }
+    #subtext{
+        position: absolute;
+        width: 300px;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: large;
+        color: $white_color;
+        @include media("<=bigPhone"){
+            left: 59%;
+            margin-top: 10px;
+        }
+    }
+    #type_effect{
+        margin-left: 10px;
+        color: $blue_color;
+    }
+}

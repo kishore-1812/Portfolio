@@ -1,0 +1,36 @@
+@import './App.scss';
+
+.social_icons{
+   position: absolute;
+   left: 1%;
+   bottom:0%;
+   z-index: 5;
+   >li>a{
+    color: $green_color;
+   }
+   >li{
+       padding: 15px 0px;
+   }
+   &:after{
+    content:"";
+    display: block;
+    width: 2px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $green_color;
+   }
+   >li:hover{
+       transform:translateY(-2px);
+       transition: 0.3ms;
+       >a{
+           color: $blue_color;
+       }
+   }
+    
+}
+
+
+.stick_it{
+    position: fixed;
+    bottom: 0%;
+}

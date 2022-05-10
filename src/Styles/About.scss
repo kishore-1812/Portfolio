@@ -1,0 +1,211 @@
+@import './App.scss';
+@import './breakpoints.scss';
+#about_me{
+    height: 130vh;
+    @include media("<=bigPhone"){
+        height: 190vh;
+        margin-top: 10px;
+    }
+    @include media(">bigPhone","<tablet"){
+        height: 200vh;
+    }
+    .breakpoint__medium-down{
+        position: relative;
+        top: 7.2%;
+        left: 15%;
+        @include media("<bigPhone"){
+            top: 11.5%;
+            left: 15%;
+        }
+        @include media("<=phone"){
+            top: 8%;
+        }
+        h5{
+            color: $green_color;
+            @include media("<=bigPhone"){
+                font-size: 2rem;
+            }
+            @include media(">bigPhone","<desktop"){
+                font-size: 2rem;
+            }
+            @include media(">=tablet","<desktop"){
+                margin-bottom: 30px;
+            }
+        }
+    }
+    p{
+        position: relative;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:$blue_color;
+        font-size: 1.3em;
+        line-height: 1.6;
+        max-width: 70%;
+        @include media("<=bigPhone"){
+            max-width: 300px;
+            font-size: 1em;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        @include media(">bigPhone","<desktop"){
+            text-align: justify;
+            font-size: 1.5em;
+        }
+    }
+    #skills_title{
+        position: relative;
+        color: $green_color;
+        top: 32%;
+        left: 16%;
+        @include media("<=bigPhone"){
+            top: 35%;
+            left: 15%;
+            margin-top: -170px;
+        }
+        @include media(">=tablet","<desktop"){
+            margin-top: -100px;
+        }
+        @include media(">bigPhone","<tablet"){
+            margin-top: -100px;
+        }
+    }
+    .box_container{
+        position: relative;
+        top:40%;
+        overflow-y: hidden;
+    }
+    .boxes{
+        display: flex;
+        margin-left: 15%;
+        @include media("<=bigPhone"){
+            flex-direction: column;
+            font-size: .9em;
+            height: 600px;
+        }
+        @include media(">bigPhone","<tablet"){
+            margin-left:2%;
+            flex-direction: column;
+            font-size: 1em;
+            overflow: hidden;
+            height: 650px;
+        }
+        @include media(">phone","<bigPhone"){
+            margin-left: 10%;
+        }
+        >div{
+            max-width: 30%; 
+            height: 220px;
+            margin: 5px 15px 5px;
+            padding: 10px;
+            background-color: $secondary_color;
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+            @include media("<=bigPhone"){
+                max-width: 303px;
+                margin-left: -13px;
+            }
+            @include media(">bigPhone","<tablet"){
+                max-width: 340px;
+                margin: 0px 0 20px 20%;
+                overflow-y: hidden;
+            }
+        }
+        h4{
+            color: $white_color;
+        }
+        ul{
+            li{
+                color: $blue_color;
+                padding:2px 0px ;
+            }
+        }
+        .pl_box {
+            #first_box_header{
+                display: flex;
+                color: $white_color;
+                h4{
+                    margin:2px 0px 0px 5px;
+                    @include media("<=bigPhone"){
+                        font-size: 1.1em;
+                    }
+                }
+                #animate_code{
+                    margin-left: 6px;
+                }
+                @include media("<=bigPhone"){
+                    margin-left:10px ;
+                }
+            }
+            #pl_skill{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(154px, 200px));
+                gap: 0px 25px;
+                margin: 20px 0px 20px -20px;
+
+                li::before{
+                    content: "▹";
+                    color: $green_color;
+                }
+            }
+           
+        }
+
+        .lib_box{
+            #second_box_header{
+                display: flex;
+                color: $white_color;
+                overflow: hidden;
+                h4{
+                    margin: 2px 0px 0px 5px;
+                    @include media("<=bigPhone"){
+                        font-size: 1.1em;
+                        padding-left: 2px;
+                    }
+                }
+                #animate_tool{
+                    margin-left: 6px;
+                    // animation: devtool 1.8s infinite;
+                    // animation-direction: alternate-reverse;
+                }
+                @include media("<=bigPhone"){
+                    margin-left:10px ;
+                }
+            }
+            #dt_skill{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(154px, 200px));
+                gap: 0px 5px;
+                margin: 20px 0px 20px -20px;
+                li::before{
+                    content: "▹";
+                    color: $green_color;
+                }
+            }
+            @include media("<=bigPhone"){
+                margin-top: 35px;
+                margin-bottom: 20px;
+                padding-left: 10px;
+            }
+        }
+        @include media(">=tablet","<desktop"){
+            margin-left: 70px;
+            >div{
+                max-width: 303px;
+            }
+        }
+    }
+   
+}
+
+@keyframes devtool {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+
+}
