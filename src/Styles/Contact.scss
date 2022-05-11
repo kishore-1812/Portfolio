@@ -8,6 +8,9 @@
     @include media("<=bigPhone"){
         height: 130vh;
     }
+    @include media(">bigPhone","<tablet"){
+        margin-top: -200%;
+    }
     #form_cont{
         position: absolute;
         left: 50%;
@@ -170,7 +173,7 @@
     }
 }
 
-@include media(">bigPhone","<tablet"){
+@include media(">=tablet"){
     .mob_icons_bp{
         position: absolute;
         bottom: 7%;
@@ -180,7 +183,30 @@
 
             .mob_icons_lst{
                 display: flex;
-                left: 28%;
+                left: 35%;
+                >li>a{
+                    color: $green_color;
+                    padding-left: 15px;
+                   }
+            }
+        }
+    }
+    .media_icons{
+        width: 27px;
+        height:27px;
+    }
+}
+@media only screen and (min-width:451px) and (max-width:600px){
+    .mob_icons_bp{
+        position: absolute;
+        bottom: 7%;
+        width: inherit;
+        #mob_icons{
+            width: inherit;
+
+            .mob_icons_lst{
+                display: flex;
+                left: 25%;
                 >li>a{
                     color: $green_color;
                     margin-left: 20px;
@@ -189,14 +215,50 @@
         }
     }
     .media_icons{
-        width: 30px;
-        height:30px;
+        width: 27px;
+        height:27px;
     }
     footer{
         text-align: center; 
         display: inline-block;
         p{
-            font-size: 1.1em;
+            font-size: .9em;
+            width: max-content;
+        }
+    }
+    #footer_icon > #icon{
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:760px){
+    .mob_icons_bp{
+        position: absolute;
+        bottom: 7%;
+        width: inherit;
+        #mob_icons{
+            width: inherit;
+
+            .mob_icons_lst{
+                display: flex;
+                left: 30%;
+                >li>a{
+                    color: $green_color;
+                    margin-left: 20px;
+                   }
+            }
+        }
+    }
+    .media_icons{
+        width: 27px;
+        height:27px;
+    }
+    footer{
+        text-align: center; 
+        display: inline-block;
+        p{
+            font-size: .9em;
             width: max-content;
         }
     }

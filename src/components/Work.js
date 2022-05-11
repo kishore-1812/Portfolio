@@ -54,7 +54,8 @@ const Work = () => {
           {firstHover && (
             <div id="hov_first_proj">
               <header>
-                <Icon icon="akar-icons:github-fill" width="27" height="27" />
+                <a href="https://github.com/kishore-1812/Single_Product_E-Commerce.git" target={"_blank"} rel="noreferrer" className='work_links'><Icon icon="akar-icons:github-fill" width="27" height="27" /></a>
+                
               </header>
               <div id="first_desc">
                 <p>
@@ -133,12 +134,15 @@ const Work = () => {
                   />
                 </div>
                 <div className="third_box_links">
+                  <a href="https://github.com/kishore-1812/Portfolio.git" target={"_blank"} rel="noreferrer" className='work_links'>
                   <Icon
                     icon="akar-icons:github-fill"
                     width="27"
                     height="27"
                     className="third_pro_icons"
                   />
+                  </a>
+                  
                 </div>
               </div>
               <div id="third_desc">

@@ -7,7 +7,9 @@
         margin-top: 10px;
     }
     @include media(">bigPhone","<tablet"){
-        height: 200vh;
+        overflow-y:hidden;
+        height: 170vh;
+        margin-bottom: -350px;
     }
     .breakpoint__medium-down{
         position: relative;
@@ -31,6 +33,10 @@
             @include media(">=tablet","<desktop"){
                 margin-bottom: 30px;
             }
+            @media only screen and (min-width:451px) and (max-width:530px){
+                overflow-y: hidden;
+            }
+            
         }
     }
     p{
@@ -51,7 +57,18 @@
         @include media(">bigPhone","<desktop"){
             text-align: justify;
             font-size: 1.5em;
+            overflow-y: hidden;
         }
+        @media only screen and (min-width:450px) and (max-width:500px){
+            margin-top: 40px;
+        }
+        @media only screen and (min-width:500px) and (max-width:613px){
+            margin-top: 40px;
+        }
+        @media only screen and (min-width:768px) and (max-width:850px){
+            margin-top: 40px;
+        }
+        
     }
     #skills_title{
         position: relative;
@@ -66,14 +83,22 @@
         @include media(">=tablet","<desktop"){
             margin-top: -100px;
         }
-        @include media(">bigPhone","<tablet"){
-            margin-top: -100px;
+        @media only screen and (min-width:451px) and (max-width:758px){
+            margin-top: -128px;
         }
+        // @media only screen and (min-width:455px) and (max-width:530){
+        //     margin-top: -60px;
+        // }
     }
     .box_container{
         position: relative;
         top:40%;
         overflow-y: hidden;
+        @media only screen and (min-width:455px) and (max-width:530){
+            margin-top: -40px;
+            overflow-y: hidden;
+        }
+        
     }
     .boxes{
         display: flex;
@@ -87,11 +112,17 @@
             margin-left:2%;
             flex-direction: column;
             font-size: 1em;
-            overflow: hidden;
+            overflow-y: hidden;
             height: 650px;
         }
         @include media(">phone","<bigPhone"){
             margin-left: 10%;
+        }
+        @media only screen and (min-width:769px) and (max-width:899px){
+            left: 5%;
+        }
+        @media only screen and (min-width:900px) and (max-width:1365px){
+            left: 10%;
         }
         >div{
             max-width: 30%; 
@@ -107,7 +138,7 @@
             @include media(">bigPhone","<tablet"){
                 max-width: 340px;
                 margin: 0px 0 20px 20%;
-                overflow-y: hidden;
+                overflow: hidden;
             }
         }
         h4{
@@ -197,15 +228,3 @@
    
 }
 
-@keyframes devtool {
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(-15deg);
-    }
-    100%{
-        transform: rotate(-45deg);
-    }
-
-}

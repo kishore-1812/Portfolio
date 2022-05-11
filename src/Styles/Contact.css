@@ -69,6 +69,12 @@
   }
 }
 
+@media (min-width: 451px) and (max-width: 767px) {
+  #contact_cont {
+    margin-top: -200%;
+  }
+}
+
 #contact_cont #form_cont {
   position: absolute;
   left: 50%;
@@ -288,7 +294,7 @@
   }
 }
 
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 768px) {
   .mob_icons_bp {
     position: absolute;
     bottom: 7%;
@@ -301,22 +307,86 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    left: 28%;
+    left: 35%;
+  }
+  .mob_icons_bp #mob_icons .mob_icons_lst > li > a {
+    color: #A9C52F;
+    padding-left: 15px;
+  }
+  .media_icons {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+  .mob_icons_bp {
+    position: absolute;
+    bottom: 7%;
+    width: inherit;
+  }
+  .mob_icons_bp #mob_icons {
+    width: inherit;
+  }
+  .mob_icons_bp #mob_icons .mob_icons_lst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 25%;
   }
   .mob_icons_bp #mob_icons .mob_icons_lst > li > a {
     color: #A9C52F;
     margin-left: 20px;
   }
   .media_icons {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
   }
   footer {
     text-align: center;
     display: inline-block;
   }
   footer p {
-    font-size: 1.1em;
+    font-size: .9em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #footer_icon > #icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 760px) {
+  .mob_icons_bp {
+    position: absolute;
+    bottom: 7%;
+    width: inherit;
+  }
+  .mob_icons_bp #mob_icons {
+    width: inherit;
+  }
+  .mob_icons_bp #mob_icons .mob_icons_lst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 30%;
+  }
+  .mob_icons_bp #mob_icons .mob_icons_lst > li > a {
+    color: #A9C52F;
+    margin-left: 20px;
+  }
+  .media_icons {
+    width: 27px;
+    height: 27px;
+  }
+  footer {
+    text-align: center;
+    display: inline-block;
+  }
+  footer p {
+    font-size: .9em;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
