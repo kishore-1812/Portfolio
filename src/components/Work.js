@@ -90,7 +90,9 @@ const Work = () => {
           {secondHover && (
             <div id="hov_second_proj">
               <header>
+                <a href="https://github.com/kishore-1812/Simple-Js-Projects.git" target={"_blank"} rel="noreferrer" className="work_links">
                 <Icon icon="akar-icons:github-fill" width="27" height="27" />
+                </a>
               </header>
               <div id="second_desc">
                 <p>

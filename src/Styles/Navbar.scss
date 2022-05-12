@@ -18,29 +18,15 @@ $mob_nav_bg : linear-gradient(to right,rgb(49, 67, 69),rgb(31,43,44));  //,rgb(4
     li{
         padding-right: 80px;
         list-style: none;
-        color: $green_color;
         font-size: 20px;
-        a{
+        .nav_menu_link{
+            margin: 10px;
             text-decoration: none;
             color: $green_color;
+            box-sizing: border-box;
             &:hover{
                 color: $blue_color;
             }
-        }
-    }
-    #resumebtn{
-        background-color: $primary_color;
-        color: $white_color;
-        border-radius: 5px;
-        border: 3px solid $white_color; 
-        padding: 5px;
-        font-size: 20px;
-
-        &:hover{
-            cursor: pointer;
-            transition: 1s ease-in-out;
-            background-color: #fbffff;
-            color: black;
         }
     }
 }
@@ -72,43 +58,55 @@ $mob_nav_bg : linear-gradient(to right,rgb(49, 67, 69),rgb(31,43,44));  //,rgb(4
     }
     li{
         list-style: none;
-        color: $green_color;
         font-size: 20px;    
         padding: 5px;
         overflow: hidden;
 
-        a{
-            margin: 10px;
-            text-decoration: none;
-            color: $green_color;
-            padding: 10px 10px 15px 10px;
-            box-sizing: border-box;
-            &:hover{
-                background-color: $dark_blue;
-                border-radius: 18%;
-                border-bottom-left-radius:30%;
-                border-bottom-right-radius:30%;
-                color: #ffffff;
-        }
     }
-    #resumebtn{
-        background-color: $primary_color;
-        color: $white_color;
-        border-radius: 5px;
-        border: 3px solid $white_color; 
-        padding: 8px 15px 8px 15px;
-        font-size: 20px;
-
+    .menu-scrollhover{
+        margin: 10px;
+        text-decoration: none;
+        color: $green_color;
+        padding: 10px 10px 15px 10px;
+        box-sizing: border-box;
         &:hover{
-            cursor: pointer;
-            transition: 1s ease-in-out;
-            background-color: #fbffff;
-            color: black;
-        }
+            background-color: $dark_blue;
+            border-radius: 18%;
+            border-bottom-left-radius:30%;
+            border-bottom-right-radius:30%;
+            color: #ffffff;
     }
     }
 }
 
+#resumebtn{
+    background-color: $primary_color;
+    border-radius: 5px;
+    border: 3px solid $white_color; 
+    padding: 8px 9px 8px 9px;
+    font-size: 20px;
+    overflow-y: hidden;
+    &:hover{
+        cursor: pointer;
+        transition: 1s ease-in-out;
+        background-color: #fbffff58;
+        color: black;
+    }
+}
+
+#resume_name{
+    color: $white_color;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    width: max-content;   
+}
+#mb_resume_name{
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 5px;
+    color: $white_color;
+}
 .mob_tab_nav{
     width: 100%;
     height: 40px;
@@ -139,9 +137,11 @@ $mob_nav_bg : linear-gradient(to right,rgb(49, 67, 69),rgb(31,43,44));  //,rgb(4
             @include media("<=bigPhone"){
                 margin-top: 15px;
             }
+            .nav_menu_link{
+                color: $green_color;
+            }
             a{
                 text-decoration: none;
-                color: $green_color;
                 @include media("<=bigPhone"){
                     font-size: 1.6em;
                 }
@@ -164,7 +164,7 @@ $mob_nav_bg : linear-gradient(to right,rgb(49, 67, 69),rgb(31,43,44));  //,rgb(4
         color: $white_color;
         border-radius: 5px;
         border: 3px solid $white_color; 
-        padding: 5px;
+        padding: 3px;
         font-size: 1.6em;
     }
 }

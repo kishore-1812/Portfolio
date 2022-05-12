@@ -42,16 +42,16 @@ const Navbar = () => {
             <div className="nav-list">
               <ul id="mob_nav_lst">
                 <li className="nav_item">
-                  <a href="#about_me">About</a>
+                  <a href="#about_me" className="nav_menu_link">About</a>
                 </li>
                 <li className="nav_item">
-                  <a href="#work">Portfolio</a>
+                  <a href="#work" className="nav_menu_link">Portfolio</a>
                 </li>
                 <li className="nav_item">
-                  <a href="#contact_cont">Contact</a>
+                  <a href="#contact_cont" className="nav_menu_link">Contact</a>
                 </li>
                 <li className="nav_item">
-                  <button id="mb_resumebtn">Resume</button>
+                  <button id="mb_resumebtn"><a href="https://drive.google.com/file/d/11cBpB-3DYO9R8LoSm0I9aK3cHNNJrAED/view?usp=sharing" target={"_blank"}  rel="noreferrer" id="mb_resume_name">Resume</a></button>
                 </li>
               </ul>
             </div>
@@ -66,16 +66,16 @@ const Navbar = () => {
             currentClassName="active"
           >
             <li>
-              <a href="#about_me">About</a>
+              <a href="#about_me" className="nav_menu_link menu-scrollhover">About</a>
             </li>
             <li>
-              <a href="#work">Portfolio</a>
+              <a href="#work" className="nav_menu_link menu-scrollhover">Portfolio</a>
             </li>
             <li>
-              <a href="#contact_cont">Contact</a>
+              <a href="#contact_cont" className="nav_menu_link menu-scrollhover">Contact</a>
             </li>
             <li>
-              <button id="resumebtn">Resume</button>
+              <button id="resumebtn"><a href="https://drive.google.com/file/d/11cBpB-3DYO9R8LoSm0I9aK3cHNNJrAED/view?usp=sharing" download target={"_blank"}  rel="noreferrer" id="resume_name">Resume</a></button>
             </li>
           </Scrollspy>
         </div>
