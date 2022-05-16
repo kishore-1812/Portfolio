@@ -62,18 +62,29 @@
   height: 130vh;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 449px) {
   #about_me {
-    height: 190vh;
+    height: 180vh;
     margin-top: 10px;
   }
 }
 
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
   #about_me {
     overflow-y: hidden;
-    height: 170vh;
-    margin-bottom: -350px;
+    height: 200vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  #about_me {
+    height: 180vh;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 623px) {
+  #about_me {
+    height: 250vh;
   }
 }
 
@@ -124,6 +135,12 @@
   }
 }
 
+@media only screen and (min-width: 449px) and (max-width: 451px) {
+  #about_me .breakpoint__medium-down h5 {
+    font-size: 2rem;
+  }
+}
+
 #about_me p {
   position: relative;
   top: 25%;
@@ -146,7 +163,7 @@
   }
 }
 
-@media (min-width: 451px) and (max-width: 1365px) {
+@media (min-width: 450px) and (max-width: 1365px) {
   #about_me p {
     text-align: justify;
     font-size: 1.5em;
@@ -154,7 +171,7 @@
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 500px) {
+@media only screen and (min-width: 449px) and (max-width: 500px) {
   #about_me p {
     margin-top: 40px;
   }
@@ -193,6 +210,12 @@
   }
 }
 
+@media only screen and (min-width: 449px) and (max-width: 451px) {
+  #about_me #skills_title {
+    margin-top: -150px;
+  }
+}
+
 @media only screen and (min-width: 451px) and (max-width: 758px) {
   #about_me #skills_title {
     margin-top: -128px;
@@ -219,7 +242,7 @@
   margin-left: 15%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 449px) {
   #about_me .boxes {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -230,9 +253,8 @@
   }
 }
 
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
   #about_me .boxes {
-    margin-left: 2%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -243,9 +265,27 @@
   }
 }
 
+@media only screen and (min-width: 451px) and (max-width: 471px) {
+  #about_me .boxes {
+    margin-left: -2%;
+  }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 768px) {
+  #about_me .boxes {
+    margin-left: -2%;
+  }
+}
+
 @media (min-width: 381px) and (max-width: 449px) {
   #about_me .boxes {
-    margin-left: 10%;
+    margin-left: 14%;
+  }
+}
+
+@media only screen and (min-width: 449px) and (max-width: 451px) {
+  #about_me .boxes {
+    margin-left: -5%;
   }
 }
 
@@ -278,10 +318,10 @@
   }
 }
 
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
   #about_me .boxes > div {
     max-width: 340px;
-    margin: 0px 0 20px 20%;
+    margin: 0px 0 40px 20%;
     overflow: hidden;
   }
 }
@@ -414,7 +454,7 @@
 
 @media (max-width: 450px) {
   #work {
-    height: 150vh;
+    height: 190vh;
     margin-top: 15px;
   }
 }
@@ -425,10 +465,9 @@
   }
 }
 
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
   #work {
     height: 220vh;
-    margin-top: 10px;
   }
 }
 
@@ -472,6 +511,15 @@
 }
 
 @media (min-width: 451px) and (max-width: 767px) {
+  #lst_projects {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 449px) and (max-width: 451px) {
   #lst_projects {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);

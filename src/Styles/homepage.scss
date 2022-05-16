@@ -18,7 +18,7 @@
         @include media(">=tablet","<desktop"){
             width: fit-content;
         }
-        @include media(">bigPhone","<tablet"){
+        @include media(">bigPhone","<=tablet"){
             width: fit-content;
         }
     }
@@ -37,9 +37,13 @@
             left: 59%;
             margin-top: 10px;
         }
+        @media only screen and (min-width:449px) and (max-width:451px){
+            margin-left: 30px;
+        }
     }
     #type_effect{
         margin-left: 10px;
         color: $blue_color;
+        
     }
 }

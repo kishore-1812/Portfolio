@@ -2,14 +2,19 @@
 @import './breakpoints.scss';
 #about_me{
     height: 130vh;
-    @include media("<=bigPhone"){
-        height: 190vh;
+    @include media("<bigPhone"){
+        height: 180vh;
         margin-top: 10px;
     }
-    @include media(">bigPhone","<tablet"){
+    @include media(">=bigPhone","<tablet"){
         overflow-y:hidden;
-        height: 170vh;
-        margin-bottom: -350px;
+        height: 200vh;
+    }
+    @include media(">tablet","<desktop"){
+        height: 180vh;
+    }
+    @media only screen and (min-width:451px) and (max-width:623px){
+        height: 250vh;
     }
     .breakpoint__medium-down{
         position: relative;
@@ -36,6 +41,9 @@
             @media only screen and (min-width:451px) and (max-width:530px){
                 overflow-y: hidden;
             }
+            @media only screen and (min-width:449px) and (max-width:451px){
+                font-size: 2rem;
+            }
             
         }
     }
@@ -54,12 +62,12 @@
             text-align: justify;
             box-sizing: border-box;
         }
-        @include media(">bigPhone","<desktop"){
+        @include media(">=bigPhone","<desktop"){
             text-align: justify;
             font-size: 1.5em;
             overflow-y: hidden;
         }
-        @media only screen and (min-width:450px) and (max-width:500px){
+        @media only screen and (min-width:449px) and (max-width:500px){
             margin-top: 40px;
         }
         @media only screen and (min-width:500px) and (max-width:613px){
@@ -83,6 +91,9 @@
         @include media(">=tablet","<desktop"){
             margin-top: -100px;
         }
+        @media only screen and (min-width:449px) and (max-width:451px){
+            margin-top: -150px;
+        }
         @media only screen and (min-width:451px) and (max-width:758px){
             margin-top: -128px;
         }
@@ -103,20 +114,28 @@
     .boxes{
         display: flex;
         margin-left: 15%;
-        @include media("<=bigPhone"){
+        @include media("<bigPhone"){
             flex-direction: column;
             font-size: .9em;
             height: 600px;
         }
-        @include media(">bigPhone","<tablet"){
-            margin-left:2%;
+        @include media(">=bigPhone","<tablet"){
             flex-direction: column;
             font-size: 1em;
             overflow-y: hidden;
             height: 650px;
         }
+        @media only screen and (min-width:451px) and (max-width:471px){
+            margin-left: -2%;
+        }
+        @media only screen and (min-width:471px) and (max-width:768px){
+            margin-left: -2%;
+        }
         @include media(">phone","<bigPhone"){
-            margin-left: 10%;
+            margin-left: 14%;
+        }
+        @media only screen and (min-width:449px) and (max-width:451px){
+            margin-left: -5%;
         }
         @media only screen and (min-width:769px) and (max-width:899px){
             left: 5%;
@@ -135,9 +154,9 @@
                 max-width: 303px;
                 margin-left: -13px;
             }
-            @include media(">bigPhone","<tablet"){
+            @include media(">=bigPhone","<tablet"){
                 max-width: 340px;
-                margin: 0px 0 20px 20%;
+                margin: 0px 0 40px 20%;
                 overflow: hidden;
             }
         }

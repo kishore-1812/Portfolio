@@ -71,7 +71,13 @@
 
 @media (min-width: 451px) and (max-width: 767px) {
   #contact_cont {
-    margin-top: -200%;
+    margin-top: -190px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1365px) {
+  #contact_cont {
+    margin-top: 100px;
   }
 }
 
@@ -125,6 +131,12 @@
   }
 }
 
+@media (min-width: 450px) and (max-width: 767px) {
+  #contact_cont #form_cont form {
+    margin-top: 20px;
+  }
+}
+
 #contact_cont #form_cont form .form_inp {
   margin-bottom: 5%;
   height: 40px;
@@ -146,6 +158,12 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 10px auto 10px auto;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1365px) {
+  #contact_cont #form_cont form .form_inp {
+    margin-bottom: 13px;
   }
 }
 
@@ -319,7 +337,7 @@
   }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 600px) {
+@media only screen and (min-width: 449px) and (max-width: 600px) {
   .mob_icons_bp {
     position: absolute;
     bottom: 7%;
@@ -332,7 +350,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    left: 25%;
+    left: 23%;
   }
   .mob_icons_bp #mob_icons .mob_icons_lst > li > a {
     color: #A9C52F;
@@ -358,7 +376,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 760px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .mob_icons_bp {
     position: absolute;
     bottom: 7%;

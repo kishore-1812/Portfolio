@@ -51,7 +51,7 @@ const Navbar = () => {
                   <a href="#contact_cont" className="nav_menu_link">Contact</a>
                 </li>
                 <li className="nav_item">
-                  <button id="mb_resumebtn"><a href="https://drive.google.com/file/d/11cBpB-3DYO9R8LoSm0I9aK3cHNNJrAED/view?usp=sharing" target={"_blank"}  rel="noreferrer" id="mb_resume_name">Resume</a></button>
+                  <button id="mb_resumebtn"><a href="https://drive.google.com/uc?export=download&id=11cBpB-3DYO9R8LoSm0I9aK3cHNNJrAED" download target={"_blank"}  rel="noreferrer" id="mb_resume_name">Resume</a></button>
                 </li>
               </ul>
             </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <a href="#contact_cont" className="nav_menu_link menu-scrollhover">Contact</a>
             </li>
             <li>
-              <button id="resumebtn"><a href="https://drive.google.com/file/d/11cBpB-3DYO9R8LoSm0I9aK3cHNNJrAED/view?usp=sharing" download target={"_blank"}  rel="noreferrer" id="resume_name">Resume</a></button>
+              <button id="resumebtn"><a href="https://drive.google.com/uc?export=download&id=11cBpB-3DYO9R8LoSm0I9aK3cHNNJrAED" download target={"_blank"}  rel="noreferrer" id="resume_name">Resume</a></button>
             </li>
           </Scrollspy>
         </div>

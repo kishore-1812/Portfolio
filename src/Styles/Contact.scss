@@ -9,7 +9,10 @@
         height: 130vh;
     }
     @include media(">bigPhone","<tablet"){
-        margin-top: -200%;
+        margin-top: -190px;
+    }
+    @include media(">tablet","<desktop"){
+        margin-top: 100px;
     }
     #form_cont{
         position: absolute;
@@ -41,6 +44,9 @@
                width: 200px;
                margin-top: 30px;
            }
+            @include media(">=bigPhone","<tablet"){
+                margin-top: 20px;
+            }
             .form_inp{
                 margin-bottom: 5%;
                 height: 40px;
@@ -58,6 +64,10 @@
                     box-sizing: border-box;
                     margin: 10px auto 10px auto;
                 }
+                @include media(">=bigPhone","<desktop"){
+                    margin-bottom: 13px;
+                }
+                
             }
             #message{
                 margin-bottom: 5%;
@@ -196,7 +206,7 @@
         height:27px;
     }
 }
-@media only screen and (min-width:451px) and (max-width:600px){
+@media only screen and (min-width:449px) and (max-width:600px){
     .mob_icons_bp{
         position: absolute;
         bottom: 7%;
@@ -206,7 +216,7 @@
 
             .mob_icons_lst{
                 display: flex;
-                left: 25%;
+                left: 23%;
                 >li>a{
                     color: $green_color;
                     margin-left: 20px;
@@ -232,7 +242,7 @@
     }
 }
 
-@media only screen and (min-width:600px) and (max-width:760px){
+@media only screen and (min-width:600px) and (max-width:768px){
     .mob_icons_bp{
         position: absolute;
         bottom: 7%;

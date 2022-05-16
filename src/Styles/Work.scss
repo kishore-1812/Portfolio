@@ -9,16 +9,16 @@
     width: 100%;
     height: 100vh;
     @include media("<=bigPhone"){
-        height: 150vh;
+        height: 190vh;
         margin-top: 15px;
     }
     @include media("<=phone"){
         height: 190vh;
     }
-    @include media(">bigPhone","<tablet"){
+    @include media(">=bigPhone","<tablet"){
         height: 220vh;
-        margin-top: 10px;
     }
+    
 }
 #work_title{
     top: 14%;
@@ -43,6 +43,10 @@
         grid-template-rows: repeat(2, 1fr);
     }
     @include media(">bigPhone","<tablet"){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    @media only screen and (min-width:449px) and (max-width:451px){
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
